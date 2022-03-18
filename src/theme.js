@@ -6,7 +6,8 @@ const theme = extendTheme({
             primario: '#282974',
             secundario: '#5F56A9',
             terciario: '#00C89A',
-            blanco: '#F4ECFF'
+            blanco: '#F4ECFF',
+            gris: '#7C7C7C'
         }
     },
     fonts: {

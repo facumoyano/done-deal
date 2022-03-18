@@ -4,9 +4,9 @@ import SectionAbout from './SectionAbout'
 
 const Sections = () => {
   return (
-    <Box as='main' maxWidth='1200px' margin='0 auto'>
+    
       <SectionAbout />
-    </Box>
+    
   )
 }
 
