@@ -11,7 +11,6 @@ const Navbar = () => {
             as="nav"
             with="100%"
             boxShadow="0 0 0 2px rgba(0, 0, 0, 0.10)"
-            height="12vh"
         >
             <Stack
                 flexDirection="row"

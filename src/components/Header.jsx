@@ -2,6 +2,8 @@ import React from "react";
 import { Box, Button, Heading, Image, Stack, Text } from "@chakra-ui/react";
 import ImgHeader from "../assets/header.jpg";
 import Logo from "../assets/logo.png"
+import 'animate.css';
+
 
 const Header = () => {
     return (
@@ -13,7 +15,7 @@ const Header = () => {
             backgroundRepeat="no-repeat"
             backgroundSize="cover"  
         >
-            <Stack pt='6rem' justifyContent="center" maxWidth="600px" margin='0 auto' gap="2rem" >
+            <Stack pt='5rem' justifyContent="center" maxWidth="600px" margin='0 auto' gap="1rem" className="animate__animated animate__zoomIn" >
                 {/* <Heading as='h1' size='4xl' color='color.blanco' textTransform='uppercase' textAlign='center' fontWeight='900' >
                     Done deal shipping broker
                 </Heading> */}

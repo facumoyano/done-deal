@@ -1,21 +1,29 @@
-import React from 'react'
+import {useEffect} from 'react'
 import { Box, Grid, Heading, Image, Stack, Text } from '@chakra-ui/react'
 import ImgWelcome from '../assets/welcome.png'
 import ImgVessel from '../assets/vessel.png'
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 
 const SectionAbout = () => {
+
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
+
   return (
     <Box as='main' maxWidth='1200px' margin='0 auto'>
       <Grid templateColumns='1fr 1fr' my='5rem' gap='10rem' color='color.gris'>
           <Stack flexDirection='column' >
-          <Stack flexDirection='row' gap={5} alignItems='center'>
+          <Stack flexDirection='row' gap={5} alignItems='center' data-aos="fade-up">
               <Image src={ImgWelcome} alt='imagen bienvenida' width='4rem' objectFit='cover' />
-              <Heading as='h3' fontSize='2xl' textTransform='uppercase'>
+              <Heading as='h3' fontSize='2xl' textTransform='uppercase' dataAos="fade-up">
                 bienvenidos
               </Heading>
             </Stack>
-            <Box>
+            <Box data-aos="fade-up">
               <Text>
               La ventaja de nuestra empresa es que comprendemos a sus clientes, a sus competidores y a usted, de tal manera que estamos en condiciones de ayudarle con sus necesidades empresariales.
 
@@ -27,13 +35,13 @@ const SectionAbout = () => {
           </Stack>
 
           <Stack flexDirection='column'>
-          <Stack flexDirection='row' gap={5} alignItems='center'>
+          <Stack flexDirection='row' gap={5} alignItems='center' data-aos="fade-up">
               <Image src={ImgVessel} alt='imagen bienvenida' width='4rem' objectFit='cover' />
               <Heading as='h3' fontSize='2xl' textTransform='uppercase'>
                 done deal shipping brokers
               </Heading>
             </Stack>
-            <Box>
+            <Box data-aos="fade-up">
               <Text>
               World Global Logistic debido a su vasta experiencia en toda la cadena logística le ofrece a nuestros clientes la posibilidad de usar nuestro servicio de WG Project Logistics.
 
