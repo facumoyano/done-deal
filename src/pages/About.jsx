@@ -1,8 +1,17 @@
-import React from 'react'
+import AboutSectionPage from "../components/AboutSectionPage"
+import Footer from "../components/Footer"
+import HeaderAbout from "../components/HeaderAbout"
+import Navbar from "../components/Navbar"
+
 
 const About = () => {
   return (
-    <div>About</div>
+    <>
+      <Navbar />
+      <HeaderAbout />
+      <AboutSectionPage />
+      <Footer />
+    </>
   )
 }
 

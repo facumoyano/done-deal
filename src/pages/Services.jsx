@@ -2,7 +2,7 @@
 import Navbar from "../components/Navbar"
 import HeaderServices from "../components/HeaderServices"
 import ServicesItems from "../components/ServicesItems"
-import SectionAbout from "../components/SectionAbout"
+import Footer from '../components/Footer'
 
 
 
@@ -12,7 +12,7 @@ const Services = () => {
       <Navbar />
       <HeaderServices />
       <ServicesItems />
-      <SectionAbout />
+      <Footer />
     </>
   )
 }
