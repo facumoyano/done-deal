@@ -26,7 +26,7 @@ const AboutSectionPage = () => {
                         src={Img1}
                         alt="img"
                         width="100%"
-                        height="80%"
+                        height={{ base: "60%", md: "100%" }}
                         objectFit="cover"
                         shadow="dark-lg"
                     />
@@ -81,7 +81,7 @@ const AboutSectionPage = () => {
                         src={Img2}
                         alt="img"
                         width="100%"
-                        height="80%"
+                        height={{ base: "60%", md: "100%" }}
                         objectFit="cover"
                         shadow="dark-lg"
                         gridRow={{ base: "1" }}
