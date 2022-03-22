@@ -12,12 +12,17 @@ import {
 
 const Form = () => {
     return (
-        <FormControl as="form" my={16}>
+        <FormControl as="form" my={16} p={5}>
             <Heading as="h3" textAlign="center" color="color.primario">
                 Contáctanos
             </Heading>
-            <Stack flexDirection="row" justifyContent="space-between">
-                <Stack width="40%">
+            <Stack
+                flexDirection={{ base: "column", md: "row" }}
+                justifyContent="space-between"
+                mt={14}
+                gap={5}
+            >
+                <Stack width={{ base: "100%", md: "40%" }}>
                     <FormLabel
                         htmlFor="nombre"
                         fontWeight="700"
@@ -37,7 +42,7 @@ const Form = () => {
                     />
                 </Stack>
 
-                <Stack width="40%">
+                <Stack width={{ base: "100%", md: "40%" }}>
                     <FormLabel
                         htmlFor="email"
                         fontWeight="700"
@@ -59,12 +64,12 @@ const Form = () => {
             </Stack>
 
             <Stack
-                flexDirection="row"
+                flexDirection={{ base: "column", md: "row" }}
                 gap={5}
                 justifyContent="space-between"
                 my={10}
             >
-                <Stack width="40%">
+                <Stack width={{ base: "100%", md: "40%" }}>
                     <FormLabel
                         htmlFor="asunto"
                         fontWeight="700"
@@ -84,7 +89,7 @@ const Form = () => {
                     />
                 </Stack>
 
-                <Stack width="40%">
+                <Stack width={{ base: "100%", md: "40%" }}>
                     <FormLabel htmlFor="email" fontWeight="700">
                         Teléfono:{" "}
                     </FormLabel>
@@ -132,10 +137,11 @@ const Form = () => {
                     color="color.blanco"
                     border="none"
                     textTransform="uppercase"
-                    width="50%"
+                    width={{ base: "100%", md: "50%" }}
                     height="3.3rem"
                     cursor="pointer"
                     my={10}
+                    _hover={{ bg: "color.terciario" }}
                 />
             </Box>
         </FormControl>

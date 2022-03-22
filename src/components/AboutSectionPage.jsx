@@ -13,10 +13,10 @@ const AboutSectionPage = () => {
     }, []);
 
     return (
-        <Box as="main" maxWidth="1200px" margin="0 auto" my="5rem">
+        <Box as="main" maxWidth="1200px" margin="0 auto" my="5rem" p={5}>
             <Stack flexDirection="column" gap="6rem">
                 <Grid
-                    templateColumns="1fr 1fr"
+                    templateColumns={{ base: "1fr", md: "1fr 1fr" }}
                     gap={20}
                     alignItems="center"
                     data-aos="fade-left"
@@ -41,44 +41,40 @@ const AboutSectionPage = () => {
                         <hr />
 
                         <Text>
-                            La ventaja de nuestra empresa es que comprendemos a
-                            sus clientes, a sus competidores y a usted, de tal
-                            manera que estamos en condiciones de ayudarle con
-                            sus necesidades empresariales. Nuestra dedicación
-                            hacia el servicio personalizado y nuestro amplio
-                            conjunto de soluciones de logística garantiza que
-                            seamos el socio estratégico perfecto de largo plazo
-                            para manejar sus necesidades mundiales y locales, en
-                            cada etapa del camino. Sus Necesidades , Nuestras
-                            Soluciones
+                            Contamos con conocimiento en el sector con una vasta
+                            experiencia en el desarrollo de comercio exterior,
+                            lo que nos permite brindar servicios a nuestros
+                            clientes que se adaptan a la necesidad de sus
+                            productos y procesos teniendo como valor agregado
+                            una gestión resolutiva y eficiente. Un equipo
+                            profesional y con experiencia se adapta a lograr un
+                            servicio personalizado para que nuestros clientes
+                            logren eficiencia en sus procesos de
+                            internacionalización.
                         </Text>
                     </Stack>
                 </Grid>
 
                 <Grid
-                    templateColumns="1fr 1fr"
+                    templateColumns={{ base: "1fr", md: "1fr 1fr" }}
                     gap={20}
                     alignItems="center"
                     data-aos="fade-right"
                     data-aos-duration="1500"
                 >
-                    <Stack flexDirection="column">
+                    <Stack flexDirection="column" gridRow={{ md: "1" }}>
                         <Heading as="h3" color="color.primario">
                             Visión
                         </Heading>
                         <hr />
 
                         <Text>
-                            La ventaja de nuestra empresa es que comprendemos a
-                            sus clientes, a sus competidores y a usted, de tal
-                            manera que estamos en condiciones de ayudarle con
-                            sus necesidades empresariales. Nuestra dedicación
-                            hacia el servicio personalizado y nuestro amplio
-                            conjunto de soluciones de logística garantiza que
-                            seamos el socio estratégico perfecto de largo plazo
-                            para manejar sus necesidades mundiales y locales, en
-                            cada etapa del camino. Sus Necesidades , Nuestras
-                            Soluciones
+                            Liderar el mercado de servicios logísticos y de
+                            internacionalización logrando la satisfacción de la
+                            cadena clientes-clientes y clientes proveedores,
+                            siendo socios estratégicos de nuestros clientes y
+                            proveedores para obtener el éxito de nuestros
+                            clientes y así el éxito de nuestra compañía.
                         </Text>
                     </Stack>
                     <Image
@@ -88,11 +84,12 @@ const AboutSectionPage = () => {
                         height="80%"
                         objectFit="cover"
                         shadow="dark-lg"
+                        gridRow={{ base: "1" }}
                     />
                 </Grid>
 
                 <Grid
-                    templateColumns="1fr 1fr"
+                    templateColumns={{ base: "1fr", md: "1fr 1fr" }}
                     gap={20}
                     alignItems="center"
                     data-aos="fade-left"
@@ -108,21 +105,18 @@ const AboutSectionPage = () => {
                     />
                     <Stack flexDirection="column">
                         <Heading as="h3" color="color.primario">
-                            Valores
+                            Misión
                         </Heading>
                         <hr />
 
                         <Text>
-                            La ventaja de nuestra empresa es que comprendemos a
-                            sus clientes, a sus competidores y a usted, de tal
-                            manera que estamos en condiciones de ayudarle con
-                            sus necesidades empresariales. Nuestra dedicación
-                            hacia el servicio personalizado y nuestro amplio
-                            conjunto de soluciones de logística garantiza que
-                            seamos el socio estratégico perfecto de largo plazo
-                            para manejar sus necesidades mundiales y locales, en
-                            cada etapa del camino. Sus Necesidades , Nuestras
-                            Soluciones
+                            Somos un equipo experimentado unido para brindar
+                            soluciones logísticas y de servicios en la
+                            internacionalización generando valor agregado en el
+                            proceso que le permitan a nuestros clientes lograr
+                            eficiencia y Eficacia hacia sus clientes, en mejores
+                            beneficios no solo en costos y efectividad sino en
+                            un proceso ágil, controlado y de soporte constante.
                         </Text>
                     </Stack>
                 </Grid>

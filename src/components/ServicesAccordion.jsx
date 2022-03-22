@@ -19,7 +19,10 @@ const ServicesAccordion = () => {
                                 backgroundColor="color.primario"
                                 color="color.blanco"
                                 _hover={{ bg: "color.primario" }}
-                                _expanded={{ bg: "#000000", color: "white" }}
+                                _expanded={{
+                                    bg: "color.terciario",
+                                    color: "white",
+                                }}
                                 textTransform="capitalize"
                                 height="3.4rem"
                                 borderRadius={10}

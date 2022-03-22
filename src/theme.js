@@ -5,7 +5,7 @@ const theme = extendTheme({
         color: {
             primario: '#282974',
             secundario: '#5F56A9',
-            terciario: '#00C89A',
+            terciario: '#e63946',
             blanco: '#F4ECFF',
             gris: '#7C7C7C'
         }
