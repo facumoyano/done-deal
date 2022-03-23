@@ -23,7 +23,7 @@ import {
 import { Link } from "react-router-dom";
 import logo from "../assets/logo.png";
 import ES from "../assets/spain.png";
-import EN from "../assets/united-kingdom.png";
+import EN from "../assets/usa.png";
 
 const Navbar = () => {
     const { isOpen, onOpen, onClose } = useDisclosure();
@@ -60,10 +60,10 @@ const Navbar = () => {
                         alignItems="center"
                     >
                         <Link to="/">
-                            <Image src={ES} alt="spain icon" width="1.4rem" />
+                            <Image src={ES} alt="spain icon" width="1.5rem" />
                         </Link>
                         <Link to="/">
-                            <Image src={EN} alt="spain icon" width="1.4rem" />
+                            <Image src={EN} alt="spain icon" width="1.7rem" />
                         </Link>
                         <HamburgerIcon
                             color="color.primario"
@@ -120,6 +120,7 @@ const Navbar = () => {
                                         src={ES}
                                         alt="spain icon"
                                         boxSize="1.5rem"
+                                        mt="1.3px"
                                     />
                                 </Link>
                             </ListItem>
@@ -128,7 +129,7 @@ const Navbar = () => {
                                     <Image
                                         src={EN}
                                         alt="spain icon"
-                                        boxSize="1.5rem"
+                                        boxSize="1.8rem"
                                     />
                                 </Link>
                             </ListItem>

@@ -17,13 +17,13 @@ const ServicesHome = () => {
     }, []);
 
     return (
-        <Box as="section" bg="#f5f5f5" p={4} maxWidth="100%">
+        <Box as="section" bg="#f5f5f5" px={4} py={10} maxWidth="100%">
             <Heading
                 as="h3"
                 color="color.primario"
                 textAlign="center"
                 data-aos="fade-up"
-                fontSize="2xl"
+                fontSize={{ base: "2xl", md: "3xl" }}
             >
                 Ofrecemos distintas soluciones logísticas
             </Heading>

@@ -9,13 +9,85 @@ import {
     Text,
     Box,
 } from "@chakra-ui/react";
+import { useState } from "react";
+import Alerta from "./Alerta";
+import emailjs from "@emailjs/browser";
+import MensajeEnviado from "./MensajeEnviado";
 
 const Form = () => {
+    const emailRegex =
+        /^[-\w.%+]{1,64}@(?:[A-Z0-9-]{1,63}\.){1,125}[A-Z]{2,63}$/i;
+
+    const [alerta, setAlerta] = useState(false);
+    const [alertaEmail, setAlertaEmail] = useState(false);
+    const [mensajeEnviado, setMensajeEnviado] = useState(false);
+
+    const [cliente, setCliente] = useState({
+        nombre: "",
+        email: "",
+        asunto: "",
+        telefono: "",
+        mensaje: "",
+    });
+
+    const handleInputChange = (e) => {
+        setCliente({
+            ...cliente,
+            [e.target.name]: e.target.value,
+        });
+    };
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+
+        if ([nombre, email, asunto, mensaje].includes("")) {
+            setAlerta(true);
+            return;
+        }
+        if (emailRegex.test(email)) {
+            setAlertaEmail(false);
+        } else {
+            setAlertaEmail(true);
+            return;
+        }
+        emailjs
+            .sendForm(
+                "service_djnsqti",
+                "template_r5wib1s",
+                e.target,
+                "user_y7fXfXr2uyhcEppelTqsy"
+            )
+            .then(
+                (result) => {
+                    setMensajeEnviado(true);
+                },
+                (error) => {
+                    console.log(error.text);
+                }
+            );
+        setAlertaEmail(false);
+        setAlerta(false);
+        setCliente({
+            nombre: "",
+            email: "",
+            asunto: "",
+            telefono: "",
+            mensaje: "",
+        });
+    };
+
+    const { nombre, email, asunto, telefono, mensaje } = cliente;
+
     return (
-        <FormControl as="form" my={16} p={5}>
+        <FormControl as="form" my={16} p={5} onSubmit={handleSubmit}>
             <Heading as="h3" textAlign="center" color="color.primario">
                 Contáctanos
             </Heading>
+            {alerta && (
+                <Alerta msg="Por favor, ingrese los campos requeridos" />
+            )}
+            {alertaEmail && <Alerta msg="Email no válido" />}
+            {mensajeEnviado && <MensajeEnviado />}
             <Stack
                 flexDirection={{ base: "column", md: "row" }}
                 justifyContent="space-between"
@@ -39,6 +111,9 @@ const Form = () => {
                         borderBottom="1px"
                         borderColor="color.primario"
                         placeholder="Ingrese su nombre"
+                        name="nombre"
+                        value={nombre}
+                        onChange={handleInputChange}
                     />
                 </Stack>
 
@@ -59,6 +134,9 @@ const Form = () => {
                         borderBottom="1px"
                         borderColor="color.primario"
                         placeholder="Ingrese su email"
+                        name="email"
+                        value={email}
+                        onChange={handleInputChange}
                     />
                 </Stack>
             </Stack>
@@ -86,6 +164,9 @@ const Form = () => {
                         borderBottom="1px"
                         borderColor="color.primario"
                         placeholder="Ingrese el asunto"
+                        name="asunto"
+                        value={asunto}
+                        onChange={handleInputChange}
                     />
                 </Stack>
 
@@ -100,6 +181,9 @@ const Form = () => {
                         borderBottom="1px"
                         borderColor="color.primario"
                         placeholder="Ingrese su número"
+                        name="telefono"
+                        value={telefono}
+                        onChange={handleInputChange}
                     />
                 </Stack>
             </Stack>
@@ -121,6 +205,9 @@ const Form = () => {
                     borderBottom="1px"
                     borderColor="color.primario"
                     placeholder="Ingrese un mensaje"
+                    name="mensaje"
+                    value={mensaje}
+                    onChange={handleInputChange}
                 />
             </Stack>
 

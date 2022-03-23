@@ -101,7 +101,7 @@ const Footer = () => {
                         </UnorderedList>
                     </Box>
                 </Stack>
-                <Text color="color.blanco" textAlign="center" pt={5}>
+                <Text color="color.blanco" textAlign="center" py={5}>
                     Todos los derechos reservados{" "}
                     <Text as="span" fontWeight="700">
                         © DONE DEAL SHIPPING BROKERS
