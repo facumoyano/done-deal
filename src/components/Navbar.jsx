@@ -24,9 +24,11 @@ import { Link } from "react-router-dom";
 import logo from "../assets/logo.png";
 import ES from "../assets/spain.png";
 import EN from "../assets/usa.png";
+import { useTranslation } from "react-i18next";
 
 const Navbar = () => {
     const { isOpen, onOpen, onClose } = useDisclosure();
+    const { t, i18n } = useTranslation();
 
     return (
         <>
@@ -59,10 +61,10 @@ const Navbar = () => {
                         gap={4}
                         alignItems="center"
                     >
-                        <Link to="/">
+                        <Link to="/" onClick={() => i18n.changeLanguage("es")}>
                             <Image src={ES} alt="spain icon" width="1.5rem" />
                         </Link>
-                        <Link to="/">
+                        <Link to="/" onClick={() => i18n.changeLanguage("en")}>
                             <Image src={EN} alt="spain icon" width="1.7rem" />
                         </Link>
                         <HamburgerIcon
@@ -88,7 +90,7 @@ const Navbar = () => {
                                     transition: "color .3s ease",
                                 }}
                             >
-                                <Link to="/">Inicio</Link>
+                                <Link to="/">{t("navbar.inicio")}</Link>
                             </ListItem>
                             <ListItem
                                 _hover={{
@@ -96,7 +98,7 @@ const Navbar = () => {
                                     transition: "color .3s ease",
                                 }}
                             >
-                                <Link to="/about">Empresa</Link>
+                                <Link to="/about">{t("navbar.empresa")}</Link>
                             </ListItem>
                             <ListItem
                                 _hover={{
@@ -104,7 +106,9 @@ const Navbar = () => {
                                     transition: "color .3s ease",
                                 }}
                             >
-                                <Link to="/services">Servicios</Link>
+                                <Link to="/services">
+                                    {t("navbar.servicios")}
+                                </Link>
                             </ListItem>
                             <ListItem
                                 _hover={{
@@ -112,10 +116,18 @@ const Navbar = () => {
                                     transition: "color .3s ease",
                                 }}
                             >
-                                <Link to="/contact">Contacto</Link>
+                                <Link to="/contact">
+                                    {t("navbar.contacto")}
+                                </Link>
                             </ListItem>
                             <ListItem>
-                                <Link to="/">
+                                <Link
+                                    to="/"
+                                    onClick={(e) => {
+                                        e.preventDefault();
+                                        i18n.changeLanguage("es");
+                                    }}
+                                >
                                     <Image
                                         src={ES}
                                         alt="spain icon"
@@ -125,7 +137,13 @@ const Navbar = () => {
                                 </Link>
                             </ListItem>
                             <ListItem>
-                                <Link to="/">
+                                <Link
+                                    to="/"
+                                    onClick={(e) => {
+                                        e.preventDefault();
+                                        i18n.changeLanguage("en");
+                                    }}
+                                >
                                     <Image
                                         src={EN}
                                         alt="spain icon"
@@ -183,7 +201,7 @@ const Navbar = () => {
                                         display="none"
                                         icon={faHome}
                                     />{" "}
-                                    Inicio
+                                    {t("navbar.inicio")}
                                 </Link>
                             </ListItem>
                             <Divider />
@@ -195,7 +213,7 @@ const Navbar = () => {
                             >
                                 <Link to="/about" onClick={onClose}>
                                     <FontAwesomeIcon icon={faBuilding} />{" "}
-                                    Empresa
+                                    {t("navbar.empresa")}
                                 </Link>
                             </ListItem>
                             <Divider />
@@ -207,7 +225,7 @@ const Navbar = () => {
                             >
                                 <Link to="/services" onClick={onClose}>
                                     <FontAwesomeIcon icon={faClipboardList} />{" "}
-                                    Servicios
+                                    {t("navbar.servicios")}
                                 </Link>
                             </ListItem>
                             <Divider />
@@ -219,7 +237,7 @@ const Navbar = () => {
                             >
                                 <Link to="/contact" onClick={onClose}>
                                     <FontAwesomeIcon icon={faAddressBook} />{" "}
-                                    Contacto
+                                    {t("navbar.contacto")}
                                 </Link>
                             </ListItem>
                             <Divider />

@@ -4,6 +4,7 @@ import "./index.css";
 import App from "./App";
 import { ChakraProvider } from "@chakra-ui/react";
 import theme from "./theme";
+import "./i18n/index";
 
 ReactDOM.render(
     <React.StrictMode>

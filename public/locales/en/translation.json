@@ -1,0 +1,15 @@
+{
+    "navbar": {
+        "inicio": "Home",
+        "empresa": "About us",
+        "servicios": "Services",
+        "contacto": "Contact"
+    },
+    "header": {
+        "subtitulo": "We know about logistic",
+        "boton": "Contact us"
+    },
+    "contacto": {
+        "header": "Contact"
+    }
+}

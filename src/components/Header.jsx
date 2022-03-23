@@ -4,8 +4,11 @@ import ImgHeader from "../assets/header.jpg";
 import Logo from "../assets/logo.png";
 import "animate.css";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 const Header = () => {
+    const { t } = useTranslation();
+
     return (
         <Box
             as="header"
@@ -40,7 +43,7 @@ const Header = () => {
                     textAlign="center"
                     fontWeight="700"
                 >
-                    Sabemos de logística
+                    {t("header.subtitulo")}
                 </Text>
                 <Stack>
                     <Button
@@ -53,7 +56,7 @@ const Header = () => {
                             backgroundColor: "color.terciario",
                         }}
                     >
-                        <Link to="contact">Contáctanos</Link>
+                        <Link to="contact">{t("header.boton")}</Link>
                     </Button>
                 </Stack>
             </Stack>

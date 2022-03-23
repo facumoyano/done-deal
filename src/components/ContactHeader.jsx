@@ -3,12 +3,15 @@ import ImgHeader from "../assets/header2.jpg";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import { useTranslation } from "react-i18next";
 
 const ContactHeader = () => {
     useEffect(() => {
         AOS.init();
         AOS.refresh();
     }, []);
+
+    const { t } = useTranslation();
 
     return (
         <Box
@@ -39,7 +42,7 @@ const ContactHeader = () => {
                     data-aos="fade-left"
                     data-aos-duration="1500"
                 >
-                    Contacto
+                    {t("contacto.header")}
                 </Heading>
             </Box>
         </Box>

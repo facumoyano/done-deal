@@ -1,0 +1,16 @@
+{
+    "navbar": {
+        "inicio": "Inicio",
+        "empresa": "Empresa",
+        "servicios": "Servicios",
+        "contacto": "Contacto"
+    },
+    "header": {
+        "subtitulo": "Sabemos de logística",
+        "boton": "Contáctanos"
+    },
+    "contacto": {
+        "header": "Contacto"
+    }
+    
+}
