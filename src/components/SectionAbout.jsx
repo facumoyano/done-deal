@@ -43,16 +43,13 @@ const SectionAbout = () => {
                     </Stack>
                     <Box data-aos="fade-up">
                         <Text mt={5}>
-                            La ventaja de nuestra empresa es que comprendemos a
-                            sus clientes, a sus competidores y a usted, de tal
-                            manera que estamos en condiciones de ayudarle con
-                            sus necesidades empresariales. Nuestra dedicación
-                            hacia el servicio personalizado y nuestro amplio
-                            conjunto de soluciones de logística garantiza que
-                            seamos el socio estratégico perfecto de largo plazo
-                            para manejar sus necesidades mundiales y locales, en
-                            cada etapa del camino. Sus Necesidades , Nuestras
-                            Soluciones
+                            Nuestra empresa trabaja en el mercado de comercio
+                            internacional brindando un mix de servicios en pos
+                            de que nuestros clientes y proveedores nos
+                            reconozcan como sinónimo de confianza, flexibilidad
+                            y eficiencia. Nos enfocamos en la necesidad de cada
+                            uno de nuestros clientes entendiendo la
+                            particularidad de su negocio.
                         </Text>
                     </Box>
                 </Stack>
@@ -80,17 +77,15 @@ const SectionAbout = () => {
                     </Stack>
                     <Box data-aos="fade-up">
                         <Text mt={5}>
-                            World Global Logistic debido a su vasta experiencia
-                            en toda la cadena logística le ofrece a nuestros
-                            clientes la posibilidad de usar nuestro servicio de
-                            WG Project Logistics. WG Project Logistics es una
-                            división de negocios internacionales donde manejamos
-                            proyectos de transporte y ofrecemos servicios
-                            integrales de logística para envios de carga pesada
-                            y gran escala. WG Project Logistics planifica,
-                            implementa y gestiona proyectos de logística
-                            especializados, a cualquier escala con cobertura de
-                            principio a fin.
+                            Somos una nueva empresa con una basta experiencia de
+                            nuestro equipo. Brindamos soluciones logísticas a
+                            medida de las necesidades de nuestros clientes tanto
+                            para la importación como exportacion. Nuestro mix de
+                            servicios aéreos, marítimos y carreteros nos permite
+                            brindar una solución logística transversal, tanto
+                            operativa, administrativa y comercial . Además
+                            brindamos el servicio de desarrollo de mercado para
+                            agroalimentos para en estados unidos y europa.
                         </Text>
                     </Box>
                 </Stack>

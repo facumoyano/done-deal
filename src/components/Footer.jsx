@@ -20,7 +20,13 @@ const Footer = () => {
                     justifyContent={{ base: "center", md: "space-between" }}
                     py={10}
                 >
-                    <Box display="flex" flexDirection="column" gap={5}>
+                    <Box
+                        display="flex"
+                        flexDirection="column"
+                        alignItems="center"
+                        justifyContent="center"
+                        gap={5}
+                    >
                         <Image
                             src={LogoFooter}
                             alt="logo done deal"
@@ -39,20 +45,6 @@ const Footer = () => {
                                 E-mail:
                             </Text>{" "}
                             commercial@donedealbrokers.com
-                        </Text>
-
-                        <Text
-                            color="color.blanco"
-                            fontSize={{ base: "sm", md: "lg" }}
-                        >
-                            <Text
-                                as="span"
-                                fontWeight="700"
-                                color="color.blanco"
-                            >
-                                Tel:
-                            </Text>{" "}
-                            +23484238789
                         </Text>
                     </Box>
                     <Box pt={10}>
