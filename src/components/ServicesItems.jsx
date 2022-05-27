@@ -12,7 +12,7 @@ const ServicesItems = () => {
                 textTransform="uppercase"
                 fontSize={{ base: "2xl", md: "3xl" }}
             >
-                ofrecemos distintas soluciones logísticas
+                ofrecemos distintas soluciones
             </Heading>
             <Box
                 backgroundColor="color.primario"

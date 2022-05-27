@@ -114,7 +114,7 @@ const AboutSectionPage = () => {
                             soluciones logísticas y de servicios en la
                             internacionalización generando valor agregado en el
                             proceso que le permitan a nuestros clientes lograr
-                            eficiencia y Eficacia hacia sus clientes, en mejores
+                            eficiencia y eficacia hacia sus clientes, en mejores
                             beneficios no solo en costos y efectividad sino en
                             un proceso ágil, controlado y de soporte constante.
                         </Text>

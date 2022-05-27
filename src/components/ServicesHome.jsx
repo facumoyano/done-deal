@@ -111,7 +111,8 @@ const ServicesHome = () => {
                         color="color.primario"
                         fontSize={{ base: "md", md: "xl" }}
                     >
-                        Comercial - Agro alimentos de diversos origenes
+                        Comercial - Agroalimentos de diversos origenes desde y
+                        hacia USA
                     </Heading>
                 </Box>
             </Grid>

@@ -96,7 +96,7 @@ const Footer = () => {
                 <Text color="color.blanco" textAlign="center" py={5}>
                     Todos los derechos reservados{" "}
                     <Text as="span" fontWeight="700">
-                        © DONE DEAL SHIPPING BROKERS
+                        © DONE DEAL SHIPPING BROKERS 2022
                     </Text>
                 </Text>
             </Container>

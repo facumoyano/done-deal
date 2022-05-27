@@ -170,6 +170,7 @@ const ServicesAccordion = () => {
                                 </h2>
                                 <AccordionPanel fontWeight="700">
                                     - Desarrollo de mercado para agroalimentos
+                                    desde y hacia USA
                                 </AccordionPanel>
                             </AccordionItem>
                         </Accordion>

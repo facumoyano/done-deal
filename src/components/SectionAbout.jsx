@@ -85,7 +85,7 @@ const SectionAbout = () => {
                             brindar una solución logística transversal, tanto
                             operativa, administrativa y comercial . Además
                             brindamos el servicio de desarrollo de mercado para
-                            agroalimentos para en estados unidos y europa.
+                            agroalimentos solo en Estados Unidos.
                         </Text>
                     </Box>
                 </Stack>
