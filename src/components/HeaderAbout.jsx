@@ -3,12 +3,15 @@ import { useEffect } from "react";
 import ImgHeader from "../assets/header2.jpg";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { useTranslation } from "react-i18next";
 
 const HeaderAbout = () => {
     useEffect(() => {
         AOS.init();
         AOS.refresh();
     }, []);
+
+    const { t } = useTranslation();
 
     return (
         <Box
@@ -40,7 +43,7 @@ const HeaderAbout = () => {
                     data-aos="fade-left"
                     data-aos-duration="1500"
                 >
-                    Sobre nosotros
+                    {t("sectionAbout.header")}
                 </Heading>
             </Box>
         </Box>

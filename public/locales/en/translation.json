@@ -10,6 +10,60 @@
         "boton": "Contact us"
     },
     "contacto": {
-        "header": "Contact"
+        "header": "Contact",
+        "titulo": "Contact us",
+        "nombre": "Name:",
+        "asunto": "Subject:",
+        "telefono": "Phone number:",
+        "mensaje": "Message:",
+        "enviar": "Send",
+        "campos": "* Required fields",
+        "nombrefield": "Enter your name",
+        "emailfield": "Enter your email",
+        "asuntofield": "Enter your subject",
+        "telefonofield": "Enter your phone number",
+        "mensajefield": "Enter a message",
+        "requeridos": "Please enter the required fields"
+    },
+    "aboutHome": {
+        "bienvenido": "Welcome",
+        "texto": "Our company works in the international trade market offering a variety of services for which our clients and providers recognize us as a synonym of trust, flexibility and efficiency. We focus on the needs of each of our clients, and understand the special features of their business.",
+        "textoDos": "We are a new company with a highly experienced team. We offer logistics solutions customized to the needs of our clients, both for importing and exporting. Our variety of air, sea and inland services allows us to provide a comprehensive logistics solution, including assistance with operations, administration and sales. We also offer our clients assistance with the agro-foods market development only in the United States."
+    },
+    "servicesHome": {
+        "titulo": "We offer different logistics solutions",
+        "logistica": "Logistics",
+        "exportacion": "Export",
+        "importacion": "Import",
+        "asesoramiento": "Globalization consulting",
+        "comercial": "Commercial services - Agro-foods from different origins from and to USA",
+        "boton": "See more"
+    },
+    "sectionAbout": {
+        "header": "About us",
+        "calidad": "Quality as a value",
+        "texto1": "We are knowledgeable about the sector and have broad experience in developing international trade, which allows us to offer our clients services that accommodate to the needs of their products and processes, with the added value of problem-solving and efficient management. Our professional and experienced team adapts to our clients’ needs and provides them a personalized service to help them be effective in their globalization processes.",
+        "vision": "Vision",
+        "texto2": "To be leaders in the logistics and globalization services market by achieving the satisfaction of the client-client and client-provider chains, and being the strategic partner of our clients and providers, so that our clients are successful and, as a result, our company as well.",
+        "mision": "Mission",
+        "texto3": "We are an experienced team brought together to provide logistics solutions and globalization services, generating value added to the process and allowing our clients to be efficient and effective with their clients, which benefits them not only in terms of costs and effectiveness, but also because they achieve an agile, controlled process with constant support."
+    },
+    "services": {
+        "header": "Services",
+        "titulo": "We offer different solutions",
+        "logisticos": "Logístics services",
+        "importacion": "Import",
+        "exportacion": "Export",
+        "aereo": "Air freights",
+        "maritimo": "Sea freights",
+        "terrestre": "Inland freights",
+        "comerciales": "Commercial services",
+        "internacionalizacion": "Globalization of companies",
+        "texto1": "- We walk your company through the process of exporting and importing to and from USA",
+        "desarrollo": "Market development",
+        "texto2": "- Market development of agro-foods to and from USA"
+    },
+    "footer": {
+        "derechos": "All rights reserved"
     }
 }

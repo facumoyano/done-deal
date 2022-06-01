@@ -4,12 +4,15 @@ import ImgWelcome from "../assets/welcome.png";
 import ImgVessel from "../assets/vessel.png";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { useTranslation } from "react-i18next";
 
 const SectionAbout = () => {
     useEffect(() => {
         AOS.init();
         AOS.refresh();
     }, []);
+
+    const { t } = useTranslation();
 
     return (
         <Box as="main" maxWidth="1200px" margin="0 auto" p={4}>
@@ -38,19 +41,11 @@ const SectionAbout = () => {
                             textTransform="uppercase"
                             data-aos="fade-up"
                         >
-                            bienvenidos
+                            {t("aboutHome.bienvenido")}
                         </Heading>
                     </Stack>
                     <Box data-aos="fade-up">
-                        <Text mt={5}>
-                            Nuestra empresa trabaja en el mercado de comercio
-                            internacional brindando un mix de servicios en pos
-                            de que nuestros clientes y proveedores nos
-                            reconozcan como sinónimo de confianza, flexibilidad
-                            y eficiencia. Nos enfocamos en la necesidad de cada
-                            uno de nuestros clientes entendiendo la
-                            particularidad de su negocio.
-                        </Text>
+                        <Text mt={5}>{t("aboutHome.texto")}</Text>
                     </Box>
                 </Stack>
 
@@ -76,17 +71,7 @@ const SectionAbout = () => {
                         </Heading>
                     </Stack>
                     <Box data-aos="fade-up">
-                        <Text mt={5}>
-                            Somos una nueva empresa con una basta experiencia de
-                            nuestro equipo. Brindamos soluciones logísticas a
-                            medida de las necesidades de nuestros clientes tanto
-                            para la importación como exportacion. Nuestro mix de
-                            servicios aéreos, marítimos y carreteros nos permite
-                            brindar una solución logística transversal, tanto
-                            operativa, administrativa y comercial . Además
-                            brindamos el servicio de desarrollo de mercado para
-                            agroalimentos solo en Estados Unidos.
-                        </Text>
+                        <Text mt={5}>{t("aboutHome.textoDos")}</Text>
                     </Box>
                 </Stack>
             </Grid>

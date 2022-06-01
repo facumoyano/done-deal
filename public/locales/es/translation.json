@@ -10,7 +10,61 @@
         "boton": "Contáctanos"
     },
     "contacto": {
-        "header": "Contacto"
+        "header": "Contacto",
+        "titulo": "Contáctanos",
+        "nombre": "Nombre:",
+        "asunto": "Asunto:",
+        "telefono": "Teléfono:",
+        "mensaje": "Mensaje:",
+        "enviar": "Enviar",
+        "campos": "* Campos obligatorios",
+        "nombrefield": "Ingrese su nombre",
+        "emailfield": "Ingrese su e-mail",
+        "asuntofield": "Ingrese el asunto",
+        "telefonofield": "Ingrese su número",
+        "mensajefield": "Ingrese un mensaje",
+        "requeridos": "Por favor, ingrese los campos requeridos" 
+    },
+    "aboutHome": {
+        "bienvenido": "Bienvenido",
+        "texto": "Nuestra empresa trabaja en el mercado de comercio internacional brindando un mix de servicios en pos de que nuestros clientes y proveedores nos reconozcan como sinónimo de confianza, flexibilidad y eficiencia. Nos enfocamos en la necesidad de cada uno de nuestros clientes entendiendo la particularidad de su negocio.",
+        "textoDos": "Somos una nueva empresa con una basta experiencia de nuestro equipo. Brindamos soluciones logísticas a medida de las necesidades de nuestros clientes tanto para la importación como exportacion. Nuestro mix de servicios aéreos, marítimos y carreteros nos permite brindar una solución logística transversal, tanto operativa, administrativa y comercial. Además brindamos el servicio de desarrollo de mercado para agroalimentos solo en Estados Unidos."
+    },
+    "servicesHome": {
+        "titulo": "Ofrecemos distintas soluciones logísticas",
+        "logistica": "Logística",
+        "exportacion": "Exportación",
+        "importacion": "Importación",
+        "asesoramiento": "Asesoramiento en comercialización",
+        "comercial": "Comercial - Agroalimentos de diversos orígentes desde y hacia USA",
+        "boton": "Ver más"
+    },
+    "sectionAbout": {
+        "header": "Sobre nosotros",
+        "calidad": "Calidad como valor",
+        "texto1": "Contamos con conocimiento en el sector con una vasta experiencia en el desarrollo de comercio exterior, lo que nos permite brindar servicios a nuestros clientes que se adaptan a la necesidad de sus productos y procesos teniendo como valor agregado una gestión resolutiva y eficiente. Un equipo profesional y con experiencia se adapta a lograr un servicio personalizado para que nuestros clientes logren eficiencia en sus procesos de internacionalización.",
+        "vision": "Visión",
+        "texto2": "Liderar el mercado de servicios logísticos y de internacionalización logrando la satisfacción de la cadena clientes-clientes y clientes proveedores, siendo socios estratégicos de nuestros clientes y proveedores para obtener el éxito de nuestros clientes y así el éxito de nuestra compañía.",
+        "mision": "Misión",
+        "texto3": "Somos un equipo experimentado unido para brindar soluciones logísticas y de servicios en la internacionalización generando valor agregado en el proceso que le permitan a nuestros clientes lograr eficiencia y eficacia hacia sus clientes, en mejores beneficios no solo en costos y efectividad sino en un proceso ágil, controlado y de soporte constante."
+    },
+    "services": {
+        "header": "Servicios",
+        "titulo": "Ofrecemos distintas soluciones",
+        "logisticos": "Logísticos",
+        "importacion": "Importación",
+        "exportacion": "Exportación",
+        "aereo": "Aéreo",
+        "maritimo": "Marítimo",
+        "terrestre": "Terrestre",
+        "comerciales": "Comerciales",
+        "internacionalizacion": "Internacionalización de empresas",
+        "texto1": "- Acompañamos a tu empresa en el proceso de exportar e importar desde y hacia USA",
+        "desarrollo": "Desarrollo de mercado",
+        "texto2": "- Desarrollo de mercado para agroalimentos desde y hacia USA"
+    },
+    "footer": {
+        "derechos": "Todos los derechos reservados"
     }
     
 }

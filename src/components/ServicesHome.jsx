@@ -9,12 +9,15 @@ import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 const ServicesHome = () => {
     useEffect(() => {
         AOS.init();
         AOS.refresh();
     }, []);
+
+    const { t } = useTranslation();
 
     return (
         <Box as="section" bg="#f5f5f5" px={4} py={10} maxWidth="100%">
@@ -25,7 +28,7 @@ const ServicesHome = () => {
                 data-aos="fade-up"
                 fontSize={{ base: "2xl", md: "3xl" }}
             >
-                Ofrecemos distintas soluciones logísticas
+                {t("servicesHome.titulo")}
             </Heading>
             <Grid
                 templateColumns={{ base: "1fr 1fr", md: "1fr 1fr 1fr 1fr 1fr" }}
@@ -47,7 +50,7 @@ const ServicesHome = () => {
                         color="color.primario"
                         fontSize={{ base: "md", md: "xl" }}
                     >
-                        Logística
+                        {t("servicesHome.logistica")}
                     </Heading>
                 </Box>
 
@@ -63,7 +66,7 @@ const ServicesHome = () => {
                         color="color.primario"
                         fontSize={{ base: "md", md: "xl" }}
                     >
-                        Exportación
+                        {t("servicesHome.exportacion")}
                     </Heading>
                 </Box>
 
@@ -79,7 +82,7 @@ const ServicesHome = () => {
                         color="color.primario"
                         fontSize={{ base: "md", md: "xl" }}
                     >
-                        Importación
+                        {t("servicesHome.importacion")}
                     </Heading>
                 </Box>
 
@@ -95,7 +98,7 @@ const ServicesHome = () => {
                         color="color.primario"
                         fontSize={{ base: "md", md: "xl" }}
                     >
-                        Asesoramiento en internacionalización
+                        {t("servicesHome.asesoramiento")}
                     </Heading>
                 </Box>
 
@@ -111,8 +114,7 @@ const ServicesHome = () => {
                         color="color.primario"
                         fontSize={{ base: "md", md: "xl" }}
                     >
-                        Comercial - Agroalimentos de diversos origenes desde y
-                        hacia USA
+                        {t("servicesHome.comercial")}
                     </Heading>
                 </Box>
             </Grid>
@@ -126,7 +128,7 @@ const ServicesHome = () => {
                     rightIcon={<ArrowForwardIcon />}
                     _hover={{ bg: "color.terciario" }}
                 >
-                    <Link to="services">Ver más</Link>
+                    <Link to="services">{t("servicesHome.boton")}</Link>
                 </Button>
             </Stack>
         </Box>

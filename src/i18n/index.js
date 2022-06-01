@@ -9,8 +9,8 @@ i18n
         react: {
             useSuspense: false
         },
-        lng: 'es',
-        fallbackLng: 'es',
+        lng: 'en',
+        fallbackLng: 'en',
         debug: true,
         ns: 'translation',
         defaultNS: 'translation',

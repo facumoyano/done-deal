@@ -10,8 +10,11 @@ import {
 import { Link } from "react-router-dom";
 import ImgFooter from "../assets/footer.jpg";
 import LogoFooter from "../assets/logo-footer.png";
+import { useTranslation } from "react-i18next";
 
 const Footer = () => {
+    const { t } = useTranslation();
+
     return (
         <Box as="footer" backgroundImage={ImgFooter} width="100%">
             <Container maxW="1200px" margin="0 auto">
@@ -64,7 +67,7 @@ const Footer = () => {
                                     transition: "color .3s ease",
                                 }}
                             >
-                                <Link to="/">Inicio</Link>
+                                <Link to="/">{t("navbar.inicio")}</Link>
                             </ListItem>
                             <ListItem
                                 _hover={{
@@ -72,7 +75,7 @@ const Footer = () => {
                                     transition: "color .3s ease",
                                 }}
                             >
-                                <Link to="/about">Empresa</Link>
+                                <Link to="/about">{t("navbar.empresa")}</Link>
                             </ListItem>
                             <ListItem
                                 _hover={{
@@ -80,7 +83,9 @@ const Footer = () => {
                                     transition: "color .3s ease",
                                 }}
                             >
-                                <Link to="/services">Servicios</Link>
+                                <Link to="/services">
+                                    {t("navbar.servicios")}
+                                </Link>
                             </ListItem>
                             <ListItem
                                 _hover={{
@@ -88,13 +93,15 @@ const Footer = () => {
                                     transition: "color .3s ease",
                                 }}
                             >
-                                <Link to="/contact">Contacto</Link>
+                                <Link to="/contact">
+                                    {t("navbar.contacto")}
+                                </Link>
                             </ListItem>
                         </UnorderedList>
                     </Box>
                 </Stack>
                 <Text color="color.blanco" textAlign="center" py={5}>
-                    Todos los derechos reservados{" "}
+                    {t("footer.derechos")}{" "}
                     <Text as="span" fontWeight="700">
                         © DONE DEAL SHIPPING BROKERS 2022
                     </Text>

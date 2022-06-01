@@ -8,8 +8,11 @@ import {
     ListItem,
     UnorderedList,
 } from "@chakra-ui/react";
+import { useTranslation } from "react-i18next";
 
 const ServicesAccordion = () => {
+    const { t } = useTranslation();
+
     return (
         <>
             <Accordion allowToggle>
@@ -27,7 +30,7 @@ const ServicesAccordion = () => {
                             borderRadius={10}
                         >
                             <Box flex="1" textAlign="left">
-                                Logísticos
+                                {t("services.logisticos")}
                             </Box>
                             <AccordionIcon />
                         </AccordionButton>
@@ -48,16 +51,22 @@ const ServicesAccordion = () => {
                                         borderRadius={10}
                                     >
                                         <Box flex="1" textAlign="left">
-                                            Importación
+                                            {t("services.importacion")}
                                         </Box>
                                         <AccordionIcon />
                                     </AccordionButton>
                                 </h2>
                                 <AccordionPanel fontWeight="700">
                                     <UnorderedList fontWeight={"700"}>
-                                        <ListItem>Aéreo</ListItem>
-                                        <ListItem>Marítimo</ListItem>
-                                        <ListItem>Terrestre</ListItem>
+                                        <ListItem>
+                                            {t("services.aereo")}
+                                        </ListItem>
+                                        <ListItem>
+                                            {t("services.maritimo")}
+                                        </ListItem>
+                                        <ListItem>
+                                            {t("services.terrestre")}
+                                        </ListItem>
                                     </UnorderedList>
                                 </AccordionPanel>
                             </AccordionItem>
@@ -80,16 +89,22 @@ const ServicesAccordion = () => {
                                         borderRadius={10}
                                     >
                                         <Box flex="1" textAlign="left">
-                                            Exportación
+                                            {t("services.exportacion")}
                                         </Box>
                                         <AccordionIcon />
                                     </AccordionButton>
                                 </h2>
                                 <AccordionPanel fontWeight="700">
                                     <UnorderedList fontWeight={"700"}>
-                                        <ListItem>Aéreo</ListItem>
-                                        <ListItem>Marítimo</ListItem>
-                                        <ListItem>Terrestre</ListItem>
+                                        <ListItem>
+                                            {t("services.aereo")}
+                                        </ListItem>
+                                        <ListItem>
+                                            {t("services.maritimo")}
+                                        </ListItem>
+                                        <ListItem>
+                                            {t("services.terrestre")}
+                                        </ListItem>
                                     </UnorderedList>
                                 </AccordionPanel>
                             </AccordionItem>
@@ -114,7 +129,7 @@ const ServicesAccordion = () => {
                             borderRadius={10}
                         >
                             <Box flex="1" textAlign="left">
-                                Comerciales
+                                {t("services.comerciales")}
                             </Box>
                             <AccordionIcon />
                         </AccordionButton>
@@ -135,14 +150,13 @@ const ServicesAccordion = () => {
                                         borderRadius={10}
                                     >
                                         <Box flex="1" textAlign="left">
-                                            Internacionalización de empresas
+                                            {t("services.internacionalizacion")}
                                         </Box>
                                         <AccordionIcon />
                                     </AccordionButton>
                                 </h2>
                                 <AccordionPanel fontWeight="700">
-                                    - Acompañamos a tu empresa en el proceso de
-                                    exportar e importar desde y hacia USA
+                                    {t("services.texto1")}
                                 </AccordionPanel>
                             </AccordionItem>
                         </Accordion>
@@ -163,14 +177,13 @@ const ServicesAccordion = () => {
                                         borderRadius={10}
                                     >
                                         <Box flex="1" textAlign="left">
-                                            Desarrollo de mercado
+                                            {t("services.desarrollo")}
                                         </Box>
                                         <AccordionIcon />
                                     </AccordionButton>
                                 </h2>
                                 <AccordionPanel fontWeight="700">
-                                    - Desarrollo de mercado para agroalimentos
-                                    desde y hacia USA
+                                    {t("services.texto2")}
                                 </AccordionPanel>
                             </AccordionItem>
                         </Accordion>

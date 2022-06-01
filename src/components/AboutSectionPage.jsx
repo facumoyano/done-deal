@@ -5,12 +5,15 @@ import Img2 from "../assets/about2.jpg";
 import Img3 from "../assets/about3.jpg";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { useTranslation } from "react-i18next";
 
 const AboutSectionPage = () => {
     useEffect(() => {
         AOS.init();
         AOS.refresh();
     }, []);
+
+    const { t } = useTranslation();
 
     return (
         <Box as="main" maxWidth="1200px" margin="0 auto" my="5rem" p={5}>
@@ -36,22 +39,11 @@ const AboutSectionPage = () => {
                             color="color.primario"
                             variant="underline"
                         >
-                            Calidad como valor
+                            {t("sectionAbout.calidad")}
                         </Heading>
                         <hr />
 
-                        <Text>
-                            Contamos con conocimiento en el sector con una vasta
-                            experiencia en el desarrollo de comercio exterior,
-                            lo que nos permite brindar servicios a nuestros
-                            clientes que se adaptan a la necesidad de sus
-                            productos y procesos teniendo como valor agregado
-                            una gestión resolutiva y eficiente. Un equipo
-                            profesional y con experiencia se adapta a lograr un
-                            servicio personalizado para que nuestros clientes
-                            logren eficiencia en sus procesos de
-                            internacionalización.
-                        </Text>
+                        <Text>{t("sectionAbout.texto1")}</Text>
                     </Stack>
                 </Grid>
 
@@ -64,18 +56,11 @@ const AboutSectionPage = () => {
                 >
                     <Stack flexDirection="column" gridRow={{ md: "1" }}>
                         <Heading as="h3" color="color.primario">
-                            Visión
+                            {t("sectionAbout.vision")}
                         </Heading>
                         <hr />
 
-                        <Text>
-                            Liderar el mercado de servicios logísticos y de
-                            internacionalización logrando la satisfacción de la
-                            cadena clientes-clientes y clientes proveedores,
-                            siendo socios estratégicos de nuestros clientes y
-                            proveedores para obtener el éxito de nuestros
-                            clientes y así el éxito de nuestra compañía.
-                        </Text>
+                        <Text>{t("sectionAbout.texto2")}</Text>
                     </Stack>
                     <Image
                         src={Img2}
@@ -105,19 +90,11 @@ const AboutSectionPage = () => {
                     />
                     <Stack flexDirection="column">
                         <Heading as="h3" color="color.primario">
-                            Misión
+                            {t("sectionAbout.mision")}
                         </Heading>
                         <hr />
 
-                        <Text>
-                            Somos un equipo experimentado unido para brindar
-                            soluciones logísticas y de servicios en la
-                            internacionalización generando valor agregado en el
-                            proceso que le permitan a nuestros clientes lograr
-                            eficiencia y eficacia hacia sus clientes, en mejores
-                            beneficios no solo en costos y efectividad sino en
-                            un proceso ágil, controlado y de soporte constante.
-                        </Text>
+                        <Text>{t("sectionAbout.texto3")}</Text>
                     </Stack>
                 </Grid>
             </Stack>

@@ -13,8 +13,11 @@ import { useState } from "react";
 import Alerta from "./Alerta";
 import emailjs from "@emailjs/browser";
 import MensajeEnviado from "./MensajeEnviado";
+import { useTranslation } from "react-i18next";
 
 const Form = () => {
+    const { t } = useTranslation();
+
     const emailRegex =
         /^[-\w.%+]{1,64}@(?:[A-Z0-9-]{1,63}\.){1,125}[A-Z]{2,63}$/i;
 
@@ -81,11 +84,9 @@ const Form = () => {
     return (
         <FormControl as="form" my={16} p={5} onSubmit={handleSubmit}>
             <Heading as="h3" textAlign="center" color="color.primario">
-                Contáctanos
+                {t("contacto.titulo")}
             </Heading>
-            {alerta && (
-                <Alerta msg="Por favor, ingrese los campos requeridos" />
-            )}
+
             {alertaEmail && <Alerta msg="Email no válido" />}
             {mensajeEnviado && <MensajeEnviado />}
             <Stack
@@ -102,7 +103,7 @@ const Form = () => {
                         flexDirection="row"
                         gap={2}
                     >
-                        Nombre: <Text color="red">*</Text>
+                        {t("contacto.nombre")} <Text color="red">*</Text>
                     </FormLabel>
                     <Input
                         id="nombre"
@@ -110,7 +111,7 @@ const Form = () => {
                         variant="flushed"
                         borderBottom="1px"
                         borderColor="color.primario"
-                        placeholder="Ingrese su nombre"
+                        placeholder={t("contacto.nombrefield")}
                         name="nombre"
                         value={nombre}
                         onChange={handleInputChange}
@@ -133,7 +134,7 @@ const Form = () => {
                         variant="flushed"
                         borderBottom="1px"
                         borderColor="color.primario"
-                        placeholder="Ingrese su email"
+                        placeholder={t("contacto.emailfield")}
                         name="email"
                         value={email}
                         onChange={handleInputChange}
@@ -155,7 +156,7 @@ const Form = () => {
                         flexDirection="row"
                         gap={2}
                     >
-                        Asunto: <Text color="red">*</Text>
+                        {t("contacto.asunto")} <Text color="red">*</Text>
                     </FormLabel>
                     <Input
                         id="asunto"
@@ -163,7 +164,7 @@ const Form = () => {
                         variant="flushed"
                         borderBottom="1px"
                         borderColor="color.primario"
-                        placeholder="Ingrese el asunto"
+                        placeholder={t("contacto.asuntofield")}
                         name="asunto"
                         value={asunto}
                         onChange={handleInputChange}
@@ -172,7 +173,7 @@ const Form = () => {
 
                 <Stack width={{ base: "100%", md: "40%" }}>
                     <FormLabel htmlFor="email" fontWeight="700">
-                        Teléfono:{" "}
+                        {t("contacto.telefono")}{" "}
                     </FormLabel>
                     <Input
                         id="telefono"
@@ -180,7 +181,7 @@ const Form = () => {
                         variant="flushed"
                         borderBottom="1px"
                         borderColor="color.primario"
-                        placeholder="Ingrese su número"
+                        placeholder={t("contacto.telefonofield")}
                         name="telefono"
                         value={telefono}
                         onChange={handleInputChange}
@@ -196,7 +197,7 @@ const Form = () => {
                     flexDirection="row"
                     gap={2}
                 >
-                    Mensaje: <Text color="red"> *</Text>
+                    {t("contacto.mensaje")} <Text color="red"> *</Text>
                 </FormLabel>
                 <Textarea
                     id="mensaje"
@@ -204,7 +205,7 @@ const Form = () => {
                     variant="flushed"
                     borderBottom="1px"
                     borderColor="color.primario"
-                    placeholder="Ingrese un mensaje"
+                    placeholder={t("contacto.mensajefield")}
                     name="mensaje"
                     value={mensaje}
                     onChange={handleInputChange}
@@ -212,13 +213,13 @@ const Form = () => {
             </Stack>
 
             <FormHelperText textAlign="right" pt={8}>
-                * Campos obligatorios
+                {t("contacto.campos")}
             </FormHelperText>
-
+            {alerta ? <Alerta msg={t("contacto.requeridos")} /> : null}
             <Box display="flex" justifyContent="center">
                 <Input
                     type="submit"
-                    value="enviar"
+                    value={t("contacto.enviar")}
                     fontWeight="700"
                     backgroundColor="color.primario"
                     color="color.blanco"

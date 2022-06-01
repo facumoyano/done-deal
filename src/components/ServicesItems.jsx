@@ -1,7 +1,10 @@
 import { Box, Grid, Heading } from "@chakra-ui/react";
 import ServicesAccordion from "./ServicesAccordion";
+import { useTranslation } from "react-i18next";
 
 const ServicesItems = () => {
+    const { t } = useTranslation();
+
     return (
         <Box maxWidth="1200px" margin="0 auto" mt="5rem" mb="8rem" p={5}>
             <Heading
@@ -12,7 +15,7 @@ const ServicesItems = () => {
                 textTransform="uppercase"
                 fontSize={{ base: "2xl", md: "3xl" }}
             >
-                ofrecemos distintas soluciones
+                {t("services.titulo")}
             </Heading>
             <Box
                 backgroundColor="color.primario"
