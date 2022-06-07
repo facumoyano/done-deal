@@ -61,10 +61,22 @@ const Navbar = () => {
                         gap={4}
                         alignItems="center"
                     >
-                        <Link to="/" onClick={() => i18n.changeLanguage("es")}>
+                        <Link
+                            to="/"
+                            onClick={(e) => {
+                                e.preventDefault();
+                                i18n.changeLanguage("es");
+                            }}
+                        >
                             <Image src={ES} alt="spain icon" width="1.5rem" />
                         </Link>
-                        <Link to="/" onClick={() => i18n.changeLanguage("en")}>
+                        <Link
+                            to="/"
+                            onClick={(e) => {
+                                e.preventDefault();
+                                i18n.changeLanguage("en");
+                            }}
+                        >
                             <Image src={EN} alt="spain icon" width="1.7rem" />
                         </Link>
                         <HamburgerIcon
