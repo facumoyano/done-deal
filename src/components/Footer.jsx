@@ -11,6 +11,8 @@ import { Link } from "react-router-dom";
 import ImgFooter from "../assets/footer.jpg";
 import LogoFooter from "../assets/logo-footer.png";
 import { useTranslation } from "react-i18next";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLocationDot, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 const Footer = () => {
     const { t } = useTranslation();
@@ -45,9 +47,23 @@ const Footer = () => {
                                 fontWeight="700"
                                 color="color.blanco"
                             >
-                                E-mail:
+                                <FontAwesomeIcon icon={faEnvelope} /> E-mail:
                             </Text>{" "}
                             commercial@donedealbrokers.com
+                        </Text>
+
+                        <Text
+                            color="color.blanco"
+                            fontSize={{ base: "sm", md: "lg" }}
+                        >
+                            <Text
+                                as="span"
+                                fontWeight="700"
+                                color="color.blanco"
+                            >
+                                <FontAwesomeIcon icon={faLocationDot} />
+                            </Text>{" "}
+                            848 Brickell Ave, Miami, FL 33131, EE. UU.
                         </Text>
                     </Box>
                     <Box pt={10}>
