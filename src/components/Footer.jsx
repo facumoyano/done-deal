@@ -119,7 +119,7 @@ const Footer = () => {
                 <Text color="color.blanco" textAlign="center" py={5}>
                     {t("footer.derechos")}{" "}
                     <Text as="span" fontWeight="700">
-                        © DONE DEAL SHIPPING BROKERS 2022
+                        © {new Date().getFullYear()} DONE DEAL BROKERS FS LLC 
                     </Text>
                 </Text>
             </Container>
